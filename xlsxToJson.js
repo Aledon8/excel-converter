@@ -8,7 +8,7 @@ function autoParseAnyExcel(filePath) {
   let headers = [];
   let dataStartRow = -1;
 
-  // Находим строку с заголовками — первую "плотную"
+  // find first header
   for (let row = range.s.r; row <= range.e.r; row++) {
     const rowValues = [];
     for (let col = range.s.c; col <= range.e.c; col++) {
@@ -52,6 +52,6 @@ function autoParseAnyExcel(filePath) {
   return result;
 }
 
-// Пример
-const json = autoParseAnyExcel("Connect's Residents.xlsx");
+// write name file
+const json = autoParseAnyExcel(".xlsx"); 
 console.log(JSON.stringify(json, null, 2));
