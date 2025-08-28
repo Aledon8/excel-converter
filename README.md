@@ -90,4 +90,3 @@ Error: Не найдена строка с заголовками
 MIT — Free to use, modify, and share.
 
 ---
-```
